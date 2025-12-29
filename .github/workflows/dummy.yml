@@ -1,0 +1,13 @@
+name: DummyWorkFlow
+
+on: 
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  DummyJob:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Onboarding
+        run: echo 'Onboarding script is running in pull request'
+      
